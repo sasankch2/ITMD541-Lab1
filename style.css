@@ -1,0 +1,117 @@
+/* Universal selector to apply global styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+}
+
+nav {
+  height: 80px;
+  background: #409bdd;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.6rem;
+  color: #fff; /* Ensure text in nav is visible */
+}
+
+.name {
+  font-weight: bold;
+  color: #fff;
+}
+
+.hero {
+  background: #cece2c;
+  padding: 2rem 0;
+}
+
+.hero-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  height: auto;
+  padding: 3rem;
+  align-items: center;
+}
+
+.column-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: #000;
+  padding: 2rem;
+}
+
+.column-left h1 {
+  margin-bottom: 1.5rem;
+  font-size: 2.5rem;
+}
+
+.column-left h2 {
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  color: #409bdd;
+}
+
+.column-left p {
+  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.column-left ul {
+  list-style: disc;
+  margin-left: 2rem;
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+}
+
+.column-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.hero-image {
+  width: 50%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 75%; /* Optional for a rounded profile image */
+}
+
+.column-bottom {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.column-bottom a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #1a14c9;
+  transition: color 0.3s;
+}
+
+.column-bottom a:hover {
+  color: #fff;
+  background-color: #409bdd;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .hero-container {
+    grid-template-columns: 1fr;
+    padding: 1.5rem;
+  }
+
+  .hero-image {
+    width: 80%;
+  }
+}
